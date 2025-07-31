@@ -1,7 +1,9 @@
-fun saludar() {
-    println("Hola mundo")
+fun saludar(nombre: String) {
+    println("Hola, $nombre")
 }
 
 fun main() {
-    saludar()
+    print("¿Cuál es tu nombre? ")
+    val nombre = readLine() ?: ""
+    saludar(nombre)
 }
